@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Melissa De Sousa",
+    "picture": "./img/speakers/melissa-de-sousa.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Trinita Rodrigues",
+    "picture": "./img/speakers/trinita-rodrigues.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Andy Crawford",
+    "picture": "./img/speakers/andy-crawford.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Lauri Erkkilä",
+    "picture": "./img/speakers/lauri-erkkila.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Brooke Singh",
+    "picture": "./img/speakers/brooke-singh.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Nino Durand",
+    "picture": "./img/speakers/nino-durand.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Clara Wilson",
+    "picture": "./img/speakers/clara-wilson.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Liam Ramirez",
+    "picture": "./img/speakers/liam-ramirez.jpg"
+  }
+]

@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  --base-color: #fff;
+  --dark-color: hsla(214, 40%, 16%, 0.94);
+  --shade-color: hsla(214, 42%, 18%, 0.72);
+  --success-color: hsla(145, 76%, 44%, 0.1);
+  --light-background: hsla(214, 61%, 25%, 0.05);
+  --spacing: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI',
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  margin: 0;
+  padding: 0;
+  color: var(--dark-color);
+  font-size: 18px;
+  line-height: 1.5rem;
+}
+
+a {
+  color: var(--dark-color);
+}
+
+a:visited,
+a:active {
+  color: var(--shade-color);
+}
+
+header,
+main,
+nav,
+footer {
+  padding: var(--spacing);
+}
+
+header {
+  background: var(--dark-color);
+  color: var(--base-color);
+}
+
+header h1 {
+  font-weight: 400;
+}
+
+nav {
+  background: var(--shade-color);
+}
+
+nav a,
+nav a:visited,
+nav a:active {
+  color: var(--base-color);
+  font-size: 1.1rem;
+  padding-right: var(--spacing);
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-top: 3em;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.0625rem;
+}
+
+#speakers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#speakers .speaker {
+  padding: var(--spacing);
+  text-align: center;
+}
+
+#schedule {
+  margin-top: calc(4 * var(--spacing));
+}
+
+.schedule-item {
+  margin-bottom: calc(2 * var(--spacing));
+}
+
+.title-and-time {
+  display: flex;
+  align-items: center;
+}
+
+.title-and-time .time {
+  font-size: 1.5em;
+}
+
+.title-and-speaker {
+  flex: 1;
+  padding-left: var(--spacing);
+}
+
+.title-and-speaker .title {
+  border-bottom: 2px solid var(--dark-color);
+  padding-bottom: calc(var(--spacing) / 2);
+}
+
+.title-and-speaker .speaker {
+  padding-top: calc(var(--spacing) / 2);
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+
+.schedule-item .description {
+  padding: var(--spacing);
+  background: var(--light-background);
+}
+.schedule-item.break .description {
+  background: var(--success-color);
+}
+
+footer {
+  font-size: 0.8em;
+  background: var(--light-background);
+}

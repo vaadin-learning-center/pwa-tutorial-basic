@@ -1,0 +1,105 @@
+[
+  {
+    "title": "Registration and breakfast",
+    "description": "Come and pick up your badge and have a bite to eat.",
+    "startTime": "08:00",
+    "category": "break"
+  },
+  {
+    "title": "Keynote - State of PWA",
+    "description":
+      "Melissa De Sousa kicks off the conference with a look at where PWA technology is today. Over the last year, we've seen immense improvements in support across all browsers, but we're just getting started. Come and find out what's new and exciting.",
+    "startTime": "09:00",
+    "speakerId": 1,
+    "category": "presentation"
+  },
+  {
+    "title": "Performance matters",
+    "description":
+      "Poor performance and reliability are factors that have driven developers to build native apps in the past. In this talk, Trinita Rodrigues will teach you some performance patterns and tools that you can use to deliver blazingly fast user experiences. Remember: blazingly fast is better than plain fast. ",
+    "startTime": "10:00",
+    "speakerId": 2,
+    "category": "presentation"
+  },
+  {
+    "title": "Morning break",
+    "description": "Get caffeinated. Eat snacks.",
+    "startTime": "10:45",
+    "category": "break"
+  },
+  {
+    "title": "PWA and Web Components",
+    "description":
+      "Web Components are a fairly recent addition to the web platform. Whereas PWA can be seen as an application model for the web, Web Components are the component model for the web. By combining the Web Components and PWA, we're able to build impressive apps directly on the web platform without any frameworks.",
+    "startTime": "11:00",
+    "speakerId": 3,
+    "category": "presentation"
+  },
+  {
+    "title": "PWA lessons learned",
+    "description":
+      "In this presentation, Lauri will give us an insight into the impact that PWA has had on their product. Since launch, their new app has reduced load times by 24% and data use by 41%, which has lead to a 12% increase in conversions. Learn how they did it and what they learned along the way. ",
+    "startTime": "11:45",
+    "speakerId": 4,
+    "category": "presentation"
+  },
+  {
+    "title": "Lunch",
+    "description":
+      "Refuel for the afternoon. Lunch and coffee are served in the main hall.",
+    "startTime": "12:30",
+    "category": "break"
+  },
+  {
+    "title": "Caching strategies",
+    "description":
+      "How do you achieve the best balance between speed, up-to-date content, and data use. In this presentation, Brooke Singh will teach us some common caching strategies and how to maximize the benefits of having a ServiceWorker.",
+    "startTime": "13:30",
+    "speakerId": 5,
+    "category": "presentation"
+  },
+  {
+    "title": "Building engaging experiences",
+    "description":
+      "You got the user to install your app. Now what? Nino will go through examples of using animations, fast load times and the Web Push API to build immersive and engaging user experiences.",
+    "startTime": "14:15",
+    "speakerId": 6,
+    "category": "presentation"
+  },
+  {
+    "title": "Afternoon break",
+    "description": "Get caffeinated. Eat snacks.",
+    "startTime": "15:00",
+    "category": "break"
+  },
+  {
+    "title": "PWAs in production",
+    "description":
+      "ES6 or transpiled? Differential serving? HTTP2? Bundling? How do you test for regressions? So many questions! Clara Wilson will explain how to take your PWA from desktop to production. She'll discuss setting up CI servers for regression testing and strategies for serving your content optimally.",
+    "startTime": "15:15",
+    "speakerId": 7,
+    "category": "presentation"
+  },
+  {
+    "title": "Hardware access",
+    "description":
+      "The browser gives us access to an ever increasing set of hardware APIs. In this presentation, Liam will show us how we can use Bluetooth and accelerometer data to build a fun little game.",
+    "startTime": "16:00",
+    "speakerId": 8,
+    "category": "presentation"
+  },
+  {
+    "title": "Q&A Panel",
+    "description":
+      "You can ask us questions throughout the event with the hashtag #pwaconf. The panel consists of all our speakers.",
+    "startTime": "16:45",
+    "category": "presentation"
+  },
+  {
+    "title": "Afterparty 🎉🍻",
+    "description":
+      "Stay with us for the afterparty. Enjoy snacks and drinks while getting to know fellow PWA enthusiasts!",
+    "startTime": "17:15",
+    "category": "break"
+  }
+]
