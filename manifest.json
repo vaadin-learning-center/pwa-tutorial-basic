@@ -1,0 +1,15 @@
+{
+  "name": "PWAConf",
+  "short_name": "PWAConf",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#263445",
+  "description": "A demo app for a fictional conference",
+  "icons": [
+    {
+      "src": "img/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
