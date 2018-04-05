@@ -1,3 +1,8 @@
+// Hey there! This is an over-simplified ServiceWorker for a tutorial.
+// For any real apps, please use workboxjs.org or similar
+// If you do want to use this, you'll need to update the file manually for every change to trigger an update
+// Last modified: 2018-04-05 09:17PT
+
 const cacheName = 'pwa-conf-v1';
 const staticAssets = ['./', './index.html', './app.js', './styles.css'];
 
