@@ -78,12 +78,22 @@ nav {
   background: var(--shade-color);
 }
 
+nav a {
+  font-size: 0.8rem;
+  padding-right: calc(var(--spacing) / 2);
+}
+
 nav a,
 nav a:visited,
 nav a:active {
   color: var(--base-color);
-  font-size: 1.1rem;
-  padding-right: var(--spacing);
+}
+
+@media all and (min-width: 375px) {
+  nav a {
+    font-size: 1.1rem;
+    padding-right: var(--spacing);
+  }
 }
 
 main {
