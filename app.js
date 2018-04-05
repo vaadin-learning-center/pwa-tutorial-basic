@@ -6,7 +6,10 @@ class PWAConfApp {
   }
 
   async init() {
-    this.setupNavIntersectionObserver();
+    if ('IntersectionObserver' in window) {
+      this.setupNavIntersectionObserver();
+    }
+
     await this.loadSpeakers();
     await this.loadSchedule();
   }
