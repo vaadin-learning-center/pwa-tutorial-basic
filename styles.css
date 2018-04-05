@@ -4,11 +4,11 @@
 
 html {
   --base-color: #fff;
-  --dark-color: hsla(214, 40%, 16%, 0.94);
-  --shade-color: hsla(214, 42%, 18%, 0.72);
-  --success-color: hsla(145, 76%, 44%, 0.1);
-  --warning-color: hsla(3, 100%, 60%, 0.1);
-  --light-background: hsla(214, 61%, 25%, 0.05);
+  --dark-color: #2a3443;
+  --shade-color: #5e6673;
+  --success-color: #f0f8f1;
+  --warning-color: #fbeeec;
+  --light-background: #f4f5f7;
   --spacing: 16px;
   margin: 0;
   padding: 0;
@@ -44,6 +44,13 @@ nav,
 footer,
 .alert {
   padding: var(--spacing);
+}
+
+nav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 header {
@@ -82,18 +89,19 @@ h2 {
   letter-spacing: 0.0625rem;
 }
 
-#speakers {
+.speakers {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-#speakers .speaker {
+.speakers .speaker {
   padding: var(--spacing);
+  width: calc(128px + calc(2 * var(--spacing)));
   text-align: center;
 }
 
-#schedule {
+.schedule {
   margin-top: calc(4 * var(--spacing));
 }
 

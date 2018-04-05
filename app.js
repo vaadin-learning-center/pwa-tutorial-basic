@@ -1,7 +1,7 @@
 class PWAConfApp {
   constructor() {
-    this.speakersDiv = document.querySelector('#speakers');
-    this.scheduleDiv = document.querySelector('#schedule');
+    this.speakersDiv = document.querySelector('.speakers');
+    this.scheduleDiv = document.querySelector('.schedule');
     this.init();
   }
 
