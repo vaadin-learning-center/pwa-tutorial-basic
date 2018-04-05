@@ -24,6 +24,7 @@ body {
   font-size: 18px;
   line-height: 1.5rem;
 }
+
 [hidden] {
   display: none;
 }
@@ -102,11 +103,12 @@ h2 {
 
 .title-and-time {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .title-and-time .time {
   font-size: 1.5em;
+  font-weight: 600;
 }
 
 .title-and-speaker {
@@ -115,6 +117,7 @@ h2 {
 }
 
 .title-and-speaker .title {
+  font-weight: 600;
   border-bottom: 2px solid var(--dark-color);
   padding-bottom: calc(var(--spacing) / 2);
 }
