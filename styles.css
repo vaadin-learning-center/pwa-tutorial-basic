@@ -7,6 +7,7 @@ html {
   --dark-color: hsla(214, 40%, 16%, 0.94);
   --shade-color: hsla(214, 42%, 18%, 0.72);
   --success-color: hsla(145, 76%, 44%, 0.1);
+  --warning-color: hsla(3, 100%, 60%, 0.1);
   --light-background: hsla(214, 61%, 25%, 0.05);
   --spacing: 16px;
   margin: 0;
@@ -23,6 +24,9 @@ body {
   font-size: 18px;
   line-height: 1.5rem;
 }
+[hidden] {
+  display: none;
+}
 
 a {
   color: var(--dark-color);
@@ -36,7 +40,8 @@ a:active {
 header,
 main,
 nav,
-footer {
+footer,
+.alert {
   padding: var(--spacing);
 }
 
@@ -47,6 +52,9 @@ header {
 
 header h1 {
   font-weight: 400;
+}
+.alert {
+  background: var(--warning-color);
 }
 
 nav {

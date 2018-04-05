@@ -79,8 +79,6 @@ async function registerSW() {
       alert('ServiceWorker registration failed. Sorry about that.');
     }
   } else {
-    alert(
-      `Your browser doesn't support ServiceWorker. Please try this demo in a newer browser version.`
-    );
+    document.querySelector('.alert').removeAttribute('hidden');
   }
 }
