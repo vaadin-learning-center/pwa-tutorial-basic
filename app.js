@@ -6,8 +6,27 @@ class PWAConfApp {
   }
 
   async init() {
+    this.setupNavIntersectionObserver();
     await this.loadSpeakers();
     await this.loadSchedule();
+  }
+
+  setupNavIntersectionObserver() {
+    const nav = document.querySelector('nav');
+    const header = document.querySelector('header');
+    const callback = entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          [nav, header].forEach(e => e.classList.remove('fixed'));
+        } else {
+          [nav, header].forEach(e => e.classList.add('fixed'));
+        }
+      });
+    };
+    const observer = new IntersectionObserver(callback, {
+      threshold: [0, 1]
+    });
+    observer.observe(header);
   }
   async loadSpeakers() {
     this.speakers = await this.fetchJSON('./speakers.json');

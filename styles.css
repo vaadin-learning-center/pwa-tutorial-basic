@@ -46,6 +46,10 @@ footer,
   padding: var(--spacing);
 }
 
+nav {
+  height: 3em;
+}
+
 nav.fixed {
   position: fixed;
   top: 0;
@@ -58,9 +62,14 @@ header {
   color: var(--base-color);
 }
 
+header.fixed {
+  margin-bottom: 3em;
+}
+
 header h1 {
   font-weight: 400;
 }
+
 .alert {
   background: var(--warning-color);
 }
