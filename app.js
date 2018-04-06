@@ -9,9 +9,19 @@ class PWAConfApp {
     if ('IntersectionObserver' in window) {
       this.setupNavIntersectionObserver();
     }
+    this.addLoadingIndicatorDelay();
 
     await this.loadSpeakers();
     await this.loadSchedule();
+  }
+
+  addLoadingIndicatorDelay() {
+    // Only show spinner if we're delayed more than 1s
+    setTimeout(() => {
+      Array.from(document.querySelectorAll('.loader')).forEach(loader => {
+        loader.removeAttribute('hidden');
+      });
+    }, 1000);
   }
 
   setupNavIntersectionObserver() {
