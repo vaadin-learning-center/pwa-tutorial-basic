@@ -11,11 +11,15 @@ self.addEventListener('install', async event => {
   await cache.addAll(staticAssets);
 });
 
+// Optional: clents.claim() makes the service worker take over the current page
+// instead of waiting until next load. Useful if you have used SW to prefetch content
+// that's needed on other routes. But potentially dangerous as you are still running the
+// previous version of the app, but with new resources.
 self.addEventListener('activate', event => {
   event.waitUntil(self.clients.claim());
 });
 
-self.addEventListener('fetch', async event => {
+self.addEventListener('fetch', event => {
   const req = event.request;
 
   if (/.*(json)$/.test(req.url)) {
