@@ -1,87 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PWAConf</title>
+    <link rel="stylesheet" href="./styles.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>PWAConf</title>
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="manifest" href="./manifest.json">
+    <link rel="icon" type="image/png" href="./img/icons/favicon.png" />
 
-  <link rel="icon" type="image/png" href="./img/icons/favicon.png">
+    <meta name="theme-color" content="#2A3443" />
+    <meta
+      name="description"
+      content="PWA Tutorial Application for a fictional conference."
+    />
 
-  <meta name="theme-color" content="#2A3443" />
-  <meta name="description" content="PWA Tutorial Application for a fictional conference.">
+    <!-- iOS -->
+    <link rel="apple-touch-icon" href="./img/icons/icon-144x144.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-status-bar-style" content="black" />
+    <meta name="mobile-web-app-title" content="PWAConf" />
+  </head>
 
-  <!-- iOS -->
-  <link rel="apple-touch-icon" href="./img/icons/icon-144x144.png" />
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="mobile-web-app-status-bar-style" content="black" />
-  <meta name="mobile-web-app-title" content="PWAConf">
-</head>
+  <body>
+    <header><h1>PWAConf</h1></header>
 
-<body>
-  <header>
-    <h1>PWAConf</h1>
-  </header>
+    <nav>
+      <a href="#speakers">Speakers</a> <a href="#schedule">Schedule</a>
+      <a href="#code-of-conduct">Code of conduct</a>
+    </nav>
 
-  <nav>
-    <a href="#speakers">Speakers</a>
-    <a href="#schedule">Schedule</a>
-    <a href="#code-of-conduct">Code of conduct</a>
-  </nav>
-
-  <div class="alert" role="alert" hidden>Your browser does not support ServiceWorker. The app will not be available offline.</div>
-
-  <main>
-    <p>
-      Welcome to PWAConf, the premier made-up PWA conference in the world! The conference is held
-      <b>September 13-14</b> in sunny California.
-    </p>
-
-    <p>
-      The conference is a single day, single track event focused on building kick-ass user experiences
-      on the web.
-    </p>
-
-    <p>Learn how to build this app yourself by
-      <a href="https://vaadin.com/progressive-web-applications/build">doing the tutorial</a>.</p>
-
-    <h2 id="speakers">Speakers</h2>
-    <div class="speakers">
-      <div class="loader" hidden>Loading...</div>
+    <div class="alert" role="alert" hidden>
+      Your browser does not support ServiceWorker. The app will not be available
+      offline.
     </div>
 
-    <h2 id="schedule">Schedule</h2>
+    <main>
+      <p>
+        Welcome to PWAConf, the premier made-up PWA conference in the world! The
+        conference is held <b>September 13-14</b> in sunny Santa Cruz, CA.
+      </p>
 
-    <p>
-      All the presentations will be held in the main auditorium.
-    </p>
-    <div class="schedule">
-      <div class="loader" hidden>Loading...</div>
-    </div>
+      <p>
+        The conference is a single day, single track event focused on building
+        kick-ass user experiences on the web.
+      </p>
 
-    <h2 id="code-of-conduct">Code of conduct</h2>
-    <p>
-      All attendees are required to follow the
-      <a href="http://confcodeofconduct.com/">code of conduct</a>. Be nice to everyone or get kicked out.
-    </p>
-  </main>
-  <footer>
-    <p>
-      This is not a real conference app. This is a PWA tutorial you can find on
-      <a href="https://vaadin.com/progressive-web-applications/build">vaadin.com/progressive-web-apps/build</a>.
-    </p>
-    <p>
-      Created by
-      <a href="https://twitter.com/marcushellberg">@marcushellberg</a>, the source code is available on
-      <a href="https://github.com/marcushellberg/pwa-conf-app">GitHub.</a> Speaker images and names are created with
-      <a href="https://randomuser.me/">randomuser.me</a>.
-    </p>
+      <p>
+        Learn how to build this app yourself by
+        <a href="https://vaadin.com/tutorials/learn-pwas">doing the tutorial</a
+        >.
+      </p>
 
-  </footer>
-  <script src="./app.js"></script>
-</body>
+      <h2 id="speakers">Speakers</h2>
+      <div class="speakers"><div class="loader" hidden>Loading...</div></div>
 
+      <h2 id="schedule">Schedule</h2>
+
+      <p>All the presentations will be held in the main auditorium.</p>
+      <div class="schedule"><div class="loader" hidden>Loading...</div></div>
+
+      <h2 id="code-of-conduct">Code of conduct</h2>
+      <p>
+        All attendees are required to follow the
+        <a href="http://confcodeofconduct.com/">code of conduct</a>. Be nice to
+        everyone or get kicked out.
+      </p>
+    </main>
+    <footer>
+      <p>
+        This is not a real conference app. This is a PWA tutorial you can find
+        on
+        <a href="https://vaadin.com/progressive-web-apps"
+          >vaadin.com/progressive-web-apps</a
+        >.
+      </p>
+      <p>
+        Created by
+        <a href="https://twitter.com/marcushellberg">@marcushellberg</a>, the
+        source code is available on
+        <a href="https://github.com/vaadin-learning-center/pwa-tutorial-basic"
+          >GitHub.</a
+        >
+        Speaker images and names are created with
+        <a href="https://randomuser.me/">randomuser.me</a>.
+      </p>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
 </html>
